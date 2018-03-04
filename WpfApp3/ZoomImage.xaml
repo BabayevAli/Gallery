@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp3.ZoomImage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="ZoomImage" Width="1080" Height="720">
+    <WrapPanel Orientation="Vertical" >
+        <Image Name="img" Height="620">
+            <Image.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Crop"></MenuItem>
+                    <MenuItem Header="Zoom"></MenuItem>
+                    <MenuItem Header="BlackAndWhite"></MenuItem>
+                    <MenuItem Header="Copy"></MenuItem>
+                </ContextMenu>
+            </Image.ContextMenu>
+        </Image>
+        <WrapPanel>
+            <Button Width="50" Height="40">Crop</Button>
+            <Button Width="50" Height="40">Zoom</Button>
+            <Button Width="100" Height="40">BlackAndWhite</Button>
+        </WrapPanel>
+    </WrapPanel>
+</Window>
